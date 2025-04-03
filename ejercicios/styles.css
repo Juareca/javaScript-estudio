@@ -1,0 +1,59 @@
+/* Centrar la pantalla */
+header{
+    background-color: blueviolet;
+    font-size: 40px;
+    padding: 20px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    margin-left: 40vh;
+    width: 90px;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    margin-top: 15vh;
+    display: grid;
+    place-items: center;
+    height: 30vh;
+    background-color: black; /* Para que el borde blanco resalte */
+}
+
+/* Estilizar el botón "W" */
+.la_w button {
+    font-size: 50px;
+    color: white;
+    background: transparent;
+    border: 3px solid white; /* Borde blanco */
+    padding: 10px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+/* Estilizar los botones "A", "S", "D" */
+.las_asd {
+    display: flex;
+    gap: 20px; /* Espacio entre las letras */
+    margin-top: 20px; /* Espacio entre "W" y "ASD" */
+}
+
+.las_asd button {
+    font-size: 50px;
+    color: white;
+    background: transparent;
+    border: 3px solid white; /* Borde blanco */
+    padding: 10px;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}

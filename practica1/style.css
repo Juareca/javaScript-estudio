@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+
+.perfil img{
+    height: 240px;
+    width: 190px;
+}
+
+/* Tema oscuro */
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Tema claro (por defecto) */
+.light-mode {
+    background-color: white;
+    color: black;
+}

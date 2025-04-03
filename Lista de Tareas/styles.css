@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.container {
+    margin: 20px auto;
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+li {
+    list-style: none;
+    padding: 8px;
+    background: #ddd;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button.editar {
+    margin-left: 10px;
+}
