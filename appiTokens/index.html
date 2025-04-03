@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login con Token</title>
+</head>
+<body>
+    <h1>Autenticación con Token</h1>
+
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <button id="logout" style="display:none;">Cerrar Sesión</button>
+
+    <h2>Usuarios Protegidos</h2>
+    <button id="verUsuarios" style="display:none;">Ver Usuarios</button>
+    <ul id="usuarios"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

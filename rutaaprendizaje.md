@@ -4,19 +4,15 @@ LocalStorage, SessionStorage y Cookies (listo) <<-->>
 
 IndexedDB (listo) <-->
 
-Consumo de APIs
+Manejo avanzado de eventos(listo) <-->
+
+Delegación de eventos(listo) <-->
+
+Consumo de APIs(listo) <-->
 
 comprar pomada de Jairo
 
-Fetch API y Promesas
-
-JSON y manejo de respuestas
-
-Manejo de errores y validaciones
-
-Manejo avanzado de eventos
-
-Delegación de eventos
+Fetch API y Promesas(listo) <-->
 
 Event bubbling y capturing
 

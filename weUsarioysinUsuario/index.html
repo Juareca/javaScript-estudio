@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autenticación con JWT</title>
+</head>
+<body>
+    <div id="publico">
+        <h1>Bienvenido a la página pública</h1>
+        <p>Inicia sesión para acceder a tu perfil.</p>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <div id="privado" style="display: none;">
+        <h1>Área privada</h1>
+        <p id="mensaje">Cargando...</p>
+        <button id="cerrarSesion">Cerrar sesión</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
