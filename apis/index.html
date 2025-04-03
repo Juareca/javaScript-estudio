@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API con Fetch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestión de Usuarios</h1>
+
+    <button id="cargarUsuarios">Cargar Usuarios</button>
+    <ul id="listaUsuarios"></ul>
+
+    <h2>Agregar Usuario</h2>
+    <input type="text" id="nombreUsuario" placeholder="Nombre">
+    <input type="email" id="emailUsuario" placeholder="Email">
+    <button id="agregarUsuario">Agregar</button>
+
+    <h2>Actualizar Usuario</h2>
+    <input type="number" id="idActualizar" placeholder="ID del usuario">
+    <input type="text" id="nuevoNombre" placeholder="Nuevo nombre">
+    <input type="email" id="nuevoEmail" placeholder="Nuevo email">
+    <button id="actualizarUsuario">Actualizar</button>
+
+    <h2>Eliminar Usuario</h2>
+    <input type="number" id="idEliminar" placeholder="ID del usuario">
+    <button id="eliminarUsuario">Eliminar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
