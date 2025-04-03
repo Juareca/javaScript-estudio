@@ -74,4 +74,6 @@ Docker y contenedores
 
 EJERCICIO: 
 
+CANVAS para simulador de trafico
+
 Pasar el mouse por la pantalla y dibujar
