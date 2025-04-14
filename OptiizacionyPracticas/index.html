@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimización con Debounce</title>
+</head>
+<body>
+    <input type="text" id="busqueda" placeholder="Escribe aquí..." />
+    <p id="resultado"></p>
+
+    <script>
+        function buscar(texto) {
+            document.getElementById("resultado").textContent = `Buscando: ${texto}`;
+        }
+
+        function debounce(func, delay) {
+            let timer;
+            return function(...args) {
+                clearTimeout(timer);
+                timer = setTimeout(() => func(...args), delay);
+            };
+        }
+
+        const inputBusqueda = document.getElementById("busqueda");
+        inputBusqueda.addEventListener("input", debounce((e) => {
+            buscar(e.target.value);
+        }, 500));
+    </script>
+</body>
+</html>

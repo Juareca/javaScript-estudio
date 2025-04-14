@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #lista { list-style: none; padding: 0; }
+        li { margin: 5px 0; padding: 10px; background: #f0f0f0; display: flex; justify-content: space-between; }
+        button { background: red; color: white; border: none; padding: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+    <input type="text" id="tareaInput" placeholder="Escribe una tarea">
+    <button id="agregarBtn">Agregar</button>
+    <ul id="lista"></ul>
+
+    <script>
+        // Seleccionamos elementos
+        const lista = document.getElementById("lista");
+        const tareaInput = document.getElementById("tareaInput");
+        const agregarBtn = document.getElementById("agregarBtn");
+
+        // Evento para agregar una nueva tarea
+        agregarBtn.addEventListener("click", () => {
+            if (tareaInput.value.trim() === "") return; // No agregar vacíos
+
+            // Crear un nuevo elemento de la lista
+            const li = document.createElement("li");
+            li.innerHTML = `${tareaInput.value} <button class="eliminar">Eliminar</button>`;
+            lista.appendChild(li);
+
+            // Limpiar el input
+            tareaInput.value = "";
+        });
+
+        // Delegación de eventos para eliminar tareas
+        lista.addEventListener("click", (event) => {
+            if (event.target.classList.contains("eliminar")) {
+                event.target.parentElement.remove(); // Elimina el <li> que contiene el botón clicado
+            }
+        });
+    </script>
+</body>
+</html>

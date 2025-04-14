@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Modal con Capturing</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        
+        /* Estilos para la modal (oculta por defecto) */
+        .modal {
+            display: none; /* Oculta la modal */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Contenedor de la modal */
+        .modal-contenido {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            position: relative;
+        }
+
+        /* Botón de cierre */
+        .cerrar-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        /* Botón para abrir la modal */
+        .btn-abrir {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botón para abrir la modal -->
+    <button class="btn-abrir">Abrir Modal</button>
+
+    <!-- Contenedor de la modal -->
+    <div class="modal" id="miModal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h2>¡Hola!</h2>
+            <p>Esto es una ventana modal.</p>
+        </div>
+    </div>
+
+    <script>
+        // Obtener elementos
+        const modal = document.getElementById("miModal");
+        const btnAbrir = document.querySelector(".btn-abrir");
+        const btnCerrar = document.querySelector(".cerrar-modal");
+        const modalContenido = document.querySelector(".modal-contenido");
+
+        // 🔹 Agregar captura en el botón de abrir
+        btnAbrir.addEventListener("click", (e) => {
+            console.log("🟢 Capturado en botón (Event Capturing)");
+            modal.style.display = "flex";
+        }, true); // ← Capturing activado (tercer argumento `true`)
+
+        // 🔹 Agregar captura en el modal (fondo oscuro)
+        modal.addEventListener("click", (e) => {
+            console.log("🔵 Capturado en MODAL (Event Capturing)");
+            modal.style.display = "none";
+        }, true); // ← Capturing activado
+
+        // 🔹 Agregar captura en el contenido de la modal
+        modalContenido.addEventListener("click", (e) => {
+            console.log("🟠 Capturado en CONTENIDO de la modal (Event Capturing)");
+            e.stopPropagation(); // Evita que el evento siga al fondo
+        }, true); // ← Capturing activado
+
+        // 🔹 Capturar en el botón de cerrar
+        btnCerrar.addEventListener("click", (e) => {
+            console.log("🔴 Capturado en botón Cerrar (Event Capturing)");
+            modal.style.display = "none";
+            e.stopPropagation(); // Evita que el modal también se cierre al hacer clic en el botón
+        }, true); // ← Capturing activado
+
+    </script>
+
+</body>
+</html>

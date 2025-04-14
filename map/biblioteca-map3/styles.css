@@ -1,0 +1,102 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header i {
+  font-size: 1.5em;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+#libros-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 220px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #1a1a1a;
+}
+
+.card p {
+  margin: 0 0 10px 0;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.btnEntregar{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  
+  transition: background-color 0.3s ease;
+}
+
+li{
+  margin-bottom: 20px;
+}
+
+.card button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos por categoría/libro */
+.libro1, .libro2, .libro3, .libro4, .libro5{
+  background-color: #00e0ff20;
+}
+
+

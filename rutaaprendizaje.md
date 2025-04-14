@@ -8,33 +8,31 @@ Manejo avanzado de eventos(listo) <-->
 
 Delegación de eventos(listo) <-->
 
-Consumo de APIs(listo) <-->
+Consumo de APIs(listo) <-->(listo) <-->
 
-comprar pomada de Jairo
+Fetch API y Promesas(listo) <-->(listo) <-->
 
-Fetch API y Promesas(listo) <-->
+Event bubbling y capturing <-->(listo) <-->
 
-Event bubbling y capturing
+Optimización y buenas prácticas(listo) <-->
 
-Optimización y buenas prácticas
+Performance en JavaScript<-->(listo) <-->
 
-Performance en JavaScript
+Accesibilidad (a11y) <-->(listo) <-->
 
-Accesibilidad (a11y)
+SEO básico para frontend <-->(listo) <-->
 
-SEO básico para frontend
-
-Frameworks y librerías
+Frameworks y librerías<-->(listo) <-->
 
 Fundamentos de React (opcional, pero recomendable)
+
+comprar pomada de Jairo
 
 Librerías útiles (Lodash, Axios, etc.)
 
 Prueba final de frontend
 
 Proyecto práctico para evaluar conocimientos
-
-
 
 Backend (Después de la prueba de frontend)
 Introducción a Node.js
@@ -66,7 +64,6 @@ Despliegue de aplicaciones
 Servidores como Vercel, Heroku o AWS
 
 Docker y contenedores
-
 
 EJERCICIO: 
 

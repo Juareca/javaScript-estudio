@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Libros</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <i id="iconoHome" class="fas fa-home"></i>    
+    Presta tu libro favorito, ¡gratis!
+    <i id="iconoUser" class="fas fa-user"></i>
+  </header>
+
+  <input type="text" id="filtro" placeholder="Buscar libros..." />
+
+  <h1>Catálogo de Libros</h1>
+  <div id="libros-container"></div>
+  
+  <div id="registroMovimiento">
+    <h3>Libros Prestados</h3>
+    <ul id="listaRegistroMovimiento">
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
